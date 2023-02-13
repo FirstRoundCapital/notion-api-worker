@@ -3,6 +3,10 @@
 
 THIS IS A FORK OF [THIS OPEN SOURCE REPOSITORY](https://github.com/splitbee/notion-api-worker)
 
+To run with wrangler locally, specify the entrypoint with wrangler:
+
+`wrangler dev worker/script.js`
+
 A **serverless wrapper** for the private Notion API. It provides fast and easy access to your Notion content.
 Ideal to make Notion your CMS.
 
