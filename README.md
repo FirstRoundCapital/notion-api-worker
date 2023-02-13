@@ -3,6 +3,12 @@
 
 THIS IS A FORK OF [THIS OPEN SOURCE REPOSITORY](https://github.com/splitbee/notion-api-worker)
 
+To run with wrangler locally, specify the entrypoint with wrangler:
+
+`wrangler dev worker/script.js`
+
+[Wrangler docs](https://developers.cloudflare.com/workers/wrangler/)
+
 A **serverless wrapper** for the private Notion API. It provides fast and easy access to your Notion content.
 Ideal to make Notion your CMS.
 
@@ -34,6 +40,9 @@ _Use with caution. This is based on the private Notion API. We can not gurantee 
 
 Example ([Source Notion Page](https://www.notion.so/react-notion-example-2e22de6b770e4166be301490f6ffd420))
 
+Locally:
+[`http://172.20.2.14:8787/v1/page/2e22de6b770e4166be301490f6ffd420`](http://172.20.2.14:8787/v1/page/2e22de6b770e4166be301490f6ffd420)
+
 [`https://firstround.cloud/v1/page/2e22de6b770e4166be301490f6ffd420`](https://firstround.cloud/v1/page/2e22de6b770e4166be301490f6ffd420)
 
 Returns all block data for a given page.
@@ -47,6 +56,9 @@ Example ([Source Notion Page](https://firstround.cloud/20720198ca7a4e1b92af0a007
 
 [`https://firstround.cloud/v1/table/20720198ca7a4e1b92af0a007d3b45a4`](https://firstround.cloud/v1/table/20720198ca7a4e1b92af0a007d3b45a4)
 
+Locally:
+[`http://172.20.2.14:8787/v1/table/20720198ca7a4e1b92af0a007d3b45a4`](http://172.20.2.14:8787/v1/table/20720198ca7a4e1b92af0a007d3b45a4)
+
 ## Authentication for private pages
 
 All public pages can be accessed without authorization. If you want to fetch private pages there are two options.
@@ -59,10 +71,10 @@ To obtain your token, login to Notion and open your DevTools and find your cooki
 
 ### Deploys
 
-Deploys are done using [wrangler](https://github.com/cloudflare/wrangler).
+Deploys are done using [wrangler](https://github.com/cloudflare/workers-sdk).
 See the wrangler.example.toml file for configuration.
 
-Install wrangler with `https://github.com/cloudflare/wrangler`.
+Install wrangler with `https://github.com/cloudflare/workers-sdk`.
 Configure using `wrangler login`.
 
 After configuring the .toml file, you can deploy with `wrangler publish`.
