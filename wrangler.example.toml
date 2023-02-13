@@ -11,3 +11,6 @@ vars = { NOTION_TOKEN = "" }
 
 # Production route
 route = "firstround.cloud/*"
+
+# Compatibility date
+compatibility_date = "2023-02-13"
