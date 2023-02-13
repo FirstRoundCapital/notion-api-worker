@@ -7,6 +7,8 @@ To run with wrangler locally, specify the entrypoint with wrangler:
 
 `wrangler dev worker/script.js`
 
+[Wrangler docs](https://developers.cloudflare.com/workers/wrangler/)
+
 A **serverless wrapper** for the private Notion API. It provides fast and easy access to your Notion content.
 Ideal to make Notion your CMS.
 
