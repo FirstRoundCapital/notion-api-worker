@@ -78,7 +78,7 @@ See the wrangler.example.toml file for configuration.
 Install wrangler with `https://github.com/cloudflare/workers-sdk`.
 Configure using `wrangler login`.
 
-After configuring the .toml file, you can deploy with `wrangler publish`.
+After configuring the .toml file, you can deploy with `wrangler publish worker/script.js`.
 
 ## Credits
 
