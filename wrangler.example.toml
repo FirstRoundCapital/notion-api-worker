@@ -1,5 +1,4 @@
 name = "notion-cloudflare-worker"
-webpack_config = "webpack.config.js"
 # Uncomment for pushing to a dev worker
 #workers_dev = true
 
